@@ -1,0 +1,270 @@
+.content {
+  padding: 0 18px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  backdrop-filter: blur(10px);
+}
+
+.box {
+  position: relative;
+  width: 400px;
+  height: 530px;
+  margin-left: 40%;
+  right: calc(4%);
+  margin-top: calc(6vh);
+  background: #fff;
+  border-radius: 2px;
+  padding: 20px;
+  border: 1px solid #000000;
+  overflow: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.65);
+  border-radius: 20px;
+}
+
+.box > svg {
+  color: rgb(4, 4, 4);
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.close-icon {
+  cursor: pointer;
+  position: fixed;
+  right: calc(34%);
+  top: calc(100vh - 95vh - 33px);
+  background: white;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 35px;
+}
+/* Momin updatted code */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 5fr));
+  grid-gap: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.card {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  box-shadow: 3px 6px 4px rgba(0, 0, 0, 0.1);
+}
+.image {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+}
+
+.image img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.details {
+  padding: 20px;
+}
+
+.details h4 {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.button {
+  display: inline-block;
+  background-color: #000000;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #000000;
+}
+
+.popup-container {
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.popup-container svg {
+  width: 70px;
+  height: 70px;
+  fill: currentColor;
+}
+
+.popup-container p {
+  margin: 0;
+}
+
+.popup-submit-button {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto;
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.popup-submit-button:hover {
+  background-color: #45a049;
+}
+
+.success-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.success-container svg {
+  width: 100px;
+  height: 100px;
+  fill: green;
+  margin: 30% auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  font-size: larger;
+  font-weight: 900;
+  right: 10px;
+  cursor: pointer;
+}
+
+.address-container {
+  text-align: center;
+  margin: 20px 0;
+}
+.vehicle-number-plate {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.address-container b {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.popup-description {
+  position: relative;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  z-index: 100;
+}
+
+.popup-description p {
+  margin: 0;
+}
+
+.popup-description b {
+  font-weight: bold;
+}
+
+.popup-description:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid white;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+
+.popup-description:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 10px;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid white;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+
+/* here last*/
+
+#title {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: 100px;
+}
+
+.listing h4 {
+  font-size: 13px;
+  text-align: left;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+.listing h4:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.listing-item:hover figure.image figcaption {
+  background: rgba(195, 39, 43, 0.6);
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 0%;
+  cursor: pointer;
+  background-color: rgb(0, 144, 255);
+  color: white;
+}
+
+.button:hover,
+a:hover {
+  opacity: 0.7;
+}

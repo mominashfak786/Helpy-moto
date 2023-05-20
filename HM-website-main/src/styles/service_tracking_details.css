@@ -1,0 +1,139 @@
+.track_all{
+    margin: 0px;
+    padding: 0px;
+    gap: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+  #track_line_track{
+      width: 2px;
+      height: 900px;
+      background-color: #f1f1f1;
+      position: absolute;
+      left: 13.7%;
+      
+      z-index: -2;
+      top: 15;
+      
+  
+  }
+  
+  .track_home{
+      padding: 3%;
+      
+  }
+  
+  .track_home>h1{
+    margin-bottom: 5%;
+    
+  }
+  
+  
+  .track_home_list{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap:30px;
+  width: 100%;
+  
+  }
+  
+  .track_home_list_item{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 80%;
+   
+  
+  
+  }
+  
+  .track_number1>span{
+      padding: 15px;
+      font-weight: 700;
+      font-size: 20px;
+      background-color: #f3f3f3;
+      color : #282828;
+      border-radius: 5px;
+  
+  }
+  
+  .track_number2{
+      margin-right: auto;
+      margin-left: 20px;
+      margin-top: -20px;
+  }
+  
+  .track_number2>h2{
+      margin-bottom: 15px;
+      margin-left: 15px;
+  
+  }
+  .track_track_button{
+      position: absolute;
+      left: 20%;
+  }
+  .track_track_button > button{
+      background-color: #555FEF;
+      color: white;
+      border: 1px solid white;
+      border-radius: 20px;
+  }
+  .track_number3{
+      margin-top: -20px;
+  
+  }
+  
+  .track_abc{
+      height: 100px;
+      width: 100px;
+  }
+  
+  
+  
+  @media only screen and (max-width: 420px) {
+      #track_line_track{
+          width: 2px;
+          height: 1050px;
+          background-color: #f1f1f1;
+          position: absolute;
+          left: 18%;
+          z-index: -2;
+          top: 15;
+          
+      
+      }
+      .abc{
+          display: none;
+      }
+      .track_number2>h2{
+          margin-bottom: 15px;
+          margin-left: 15px;
+          font-size: small;
+          margin-top: 25px;
+      
+      }
+      .track_track_button{
+          position: absolute;
+          left: 30%;
+          font-size: smaller;
+        
+      }
+      .track_home_list_item{
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          width: 80%;
+          /* background-color: red; */
+          height: 100px;
+      
+      
+      }
+      .track_home>h1{
+          margin-bottom: 5%;
+          font-size: large; 
+        }
+  
+  
+  }
